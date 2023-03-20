@@ -6,26 +6,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto+Condensed&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
-        <header>
-            <a href="./index.html" class="logo"
+        <header class="menu">
+            <a href="./index.html" class="logo container"
                 >Web<span class="black">Studio</span></a
             >
-            <nav>
-                <ul>
-                    <li><a href="./index.html" class="nav">Agencja</a></li>
+            <nav class="container">
+                <ul class="nav">
+                    <li><a href="./index.html" class="nav-item">Agencja</a></li>
                     <li>
-                        <a href="./portfolio.html" class="nav">Portfolio</a>
+                        <a href="./portfolio.html" class="nav-item"
+                            >Portfolio</a
+                        >
                     </li>
-                    <li><a href="" class="nav">Kontakt</a></li>
+                    <li><a href="" class="nav-item">Kontakt</a></li>
                 </ul>
             </nav>
-            <div>
+            <div class="container contact-data">
                 <a href="mailto:info@devstudio.com" class="contact"
                     >info@devstudio.com</a
                 >
@@ -37,8 +46,8 @@
                 <h1 class="title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
                 <button type="button" class="order">Zamów usługę</button>
             </section>
-            <section>
-                <ul>
+            <section class="container">
+                <ul class="offer-items">
                     <li>
                         <h3 class="offer">LOREM IPSUM</h3>
                         <p class="offer-description">
@@ -73,9 +82,9 @@
                     </li>
                 </ul>
             </section>
-            <section>
+            <section class="container">
                 <h2 class="introduce">Czym się zajmujemy</h2>
-                <ul>
+                <ul class="our-services">
                     <li>
                         <img
                             src="images/box1.jpg"
@@ -103,8 +112,8 @@
                 </ul>
             </section>
             <section class="crew">
-                <h2>Nasz zespół</h2>
-                <ul>
+                <h2 class="introduce">Nasz zespół</h2>
+                <ul class="container crew-members">
                     <li>
                         <figure>
                             <img
@@ -113,7 +122,7 @@
                                 width="270"
                                 height="260"
                             />
-                            <figcaption>
+                            <figcaption class="description">
                                 <span class="name">John Doe</span><br />
                                 <span class="type">Produkt Designer</span>
                             </figcaption>
@@ -127,7 +136,7 @@
                                 width="270"
                                 height="260"
                             />
-                            <figcaption>
+                            <figcaption class="description">
                                 <span class="name">John Doe</span><br />
                                 <span class="type">Frontend Developer</span>
                             </figcaption>
@@ -141,7 +150,7 @@
                                 width="270"
                                 height="260"
                             />
-                            <figcaption>
+                            <figcaption class="description">
                                 <span class="name">John Doe</span><br />
                                 <span class="type">Marketing</span>
                             </figcaption>
@@ -155,7 +164,7 @@
                                 width="270"
                                 height="260"
                             />
-                            <figcaption>
+                            <figcaption class="description">
                                 <span class="name">John Doe</span><br />
                                 <span class="type">UI Designer</span>
                             </figcaption>
@@ -165,14 +174,16 @@
             </section>
         </main>
         <footer class="footer-container">
-            <a href="./index.html" class="logo"
+            <a href="./index.html" class="logo container"
                 >Web<span class="white">Studio</span></a
             >
-            <address>
+            <address class="container">
                 <span class="address">m. Warszawa, Aleje Jerozolimskie 21</span>
+                <br />
                 <a href="mailto:info@devstudio.com" class="contact-footer"
                     >info@devstudio.com</a
                 >
+                <br />
                 <a href="tel:+48111111111" class="contact-footer"
                     >+48 111 111 111</a
                 >

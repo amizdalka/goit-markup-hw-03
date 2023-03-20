@@ -10,8 +10,28 @@ body {
     --off-color: #f5f4fa;
     --background-color1: #2f303a;
 }
+*,
+*::before,
+*::after {
+    outline: none;
+}
+
+p,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .footer-container {
     background-color: var(--background-color1);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .title {
     color: #fff;
@@ -124,7 +144,7 @@ body {
     font-size: 16px;
     line-height: 1.19;
 }
-.nav {
+.nav-item {
     color: var(--font-color1);
     font-weight: 500;
     text-decoration: none;
@@ -133,8 +153,8 @@ body {
     font-size: 14px;
     line-height: 1.17;
 }
-.nav:hover,
-.nav:focus {
+.nav-itemhover,
+.nav-item:focus {
     color: var(--brand-color);
 }
 .contact {
@@ -144,9 +164,11 @@ body {
     letter-spacing: 0.02em;
     font-size: 14px;
     line-height: 1.17;
+    margin: 25px;
 }
 .crew {
     background-color: #f5f4fa;
+    padding: 94px 0;
 }
 .contact:hover,
 .contact:focus {
@@ -154,6 +176,7 @@ body {
 }
 .solutions {
     background-color: #2f303a;
+    padding: 200px 452px;
 }
 
 .address {
@@ -176,4 +199,75 @@ body {
 .contact-footer:hover,
 .contact-footer:focus {
     color: var(--brand-color);
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ececec;
+}
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    margin-bottom: 50px;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 46px;
+    padding: 32px 46px;
+}
+.contact-data {
+    padding: 32px 0;
+}
+.offer-items {
+    display: flex;
+    gap: 30px;
+    line-height: 1.71;
+    padding: 94px 0;
+}
+.our-services {
+    display: flex;
+    gap: 30px;
+    padding: 50px 0 94px;
+}
+.crew-members {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+.menu > .logo {
+    margin: 24px 90px 25px 215px;
+    padding: 0;
+}
+.decoration {
+    border: 1px solid #eeeeee;
+    padding: 20px 24px;
+}
+.footer-container > .logo {
+    margin: 60px 0 161px 215px;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.description {
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
 }
