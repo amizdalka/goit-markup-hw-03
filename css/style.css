@@ -1,8 +1,3 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #fff;
-    color: var(--font-color1);
-}
 :root {
     --font-color1: #212121;
     --font-color2: #757575;
@@ -10,12 +5,22 @@ body {
     --off-color: #f5f4fa;
     --background-color1: #2f303a;
 }
+/* style globalne */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: var(--font-color1);
+}
 *,
 *::before,
 *::after {
     outline: none;
 }
 
+h1,
+h2,
+h3,
+h4,
 p,
 figure {
     margin: 0;
@@ -27,41 +32,17 @@ ul {
     margin: 0;
     padding: 0;
 }
+img {
+    vertical-align: middle;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
-.footer-container {
-    background-color: var(--background-color1);
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-.title {
-    color: #fff;
-    font-weight: 900;
-    text-align: center;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-}
-.introduce {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-.offer {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-}
-.offer-description {
-    color: var(--font-color2);
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-}
+/* style w header */
 .logo {
     color: var(--brand-color);
     font-weight: 700;
@@ -76,14 +57,78 @@ ul {
     font-size: 26px;
     line-height: 1.19;
 }
-.white {
-    color: #fff;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+.main {
+    border: 1px solid #ececec;
 }
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.nav-item {
+    color: var(--font-color1);
+    font-weight: 500;
+    text-decoration: none;
+
+    letter-spacing: 0.02em;
+    font-size: 14px;
+    line-height: 1.17;
+}
+.nav-item:hover,
+.nav-item:focus {
+    color: var(--brand-color);
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 46px;
+    padding: 32px 46px;
+}
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 46px;
+    padding: 0 46px;
+}
+.contact-data {
+    display: flex;
+
+    padding: 32px 0;
+    gap: 50px;
+}
+.contact {
+    color: var(--font-color2);
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    font-size: 14px;
+    line-height: 1.17;
+}
+.contact:hover,
+.contact:focus {
+    color: var(--brand-color);
+}
+
+/* style w main index.html*/
 .solutions {
     background-color: var(--background-color1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 200px 452px;
+}
+
+.title {
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    min-width: 696px;
 }
 .order {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -107,6 +152,82 @@ ul {
     color: #fff;
     cursor: pointer;
 }
+.offer-items {
+    display: flex;
+    gap: 30px;
+    line-height: 1.71;
+    padding: 94px 0;
+}
+.offer {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+.offer-description {
+    color: var(--font-color2);
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+.introduce {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.our-services {
+    display: flex;
+    gap: 30px;
+    padding: 50px 0 94px;
+}
+.crew {
+    background-color: #f5f4fa;
+    padding: 94px 0;
+}
+.crew-members {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+.description {
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.name {
+    color: var(--font-color1);
+    font-weight: 500;
+    text-align: center;
+
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 10px;
+}
+.type {
+    color: var(--font-color2);
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.19;
+}
+/* style w main portfolio.html */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    margin-bottom: 50px;
+}
 .button {
     background-color: var(--off-color);
     border: none;
@@ -124,59 +245,37 @@ ul {
     color: #fff;
     cursor: pointer;
 }
-.name {
-    color: var(--font-color1);
-    font-weight: 500;
-    text-align: center;
-
-    font-size: 16px;
-    line-height: 1.19;
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.decoration {
+    border: 1px solid #eeeeee;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
 }
 .project-name {
     color: var(--font-color1);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    margin-bottom: 4px;
 }
-.type {
-    color: var(--font-color2);
-    text-align: center;
-    font-size: 16px;
+/* style w footer */
+.footer-container {
+    background-color: var(--background-color1);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.white {
+    color: #fff;
+    font-weight: 700;
+    font-size: 26px;
     line-height: 1.19;
-}
-.nav-item {
-    color: var(--font-color1);
-    font-weight: 500;
-    text-decoration: none;
-
-    letter-spacing: 0.02em;
-    font-size: 14px;
-    line-height: 1.17;
-}
-.nav-itemhover,
-.nav-item:focus {
-    color: var(--brand-color);
-}
-.contact {
-    color: var(--font-color2);
-    font-weight: 500;
-    text-decoration: none;
-    letter-spacing: 0.02em;
-    font-size: 14px;
-    line-height: 1.17;
-    margin: 25px;
-}
-.crew {
-    background-color: #f5f4fa;
-    padding: 94px 0;
-}
-.contact:hover,
-.contact:focus {
-    color: var(--brand-color);
-}
-.solutions {
-    background-color: #2f303a;
-    padding: 200px 452px;
 }
 
 .address {
@@ -187,6 +286,13 @@ ul {
     letter-spacing: 0.03em;
     font-style: normal;
 }
+.address-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 20px;
+}
+
 .contact-footer {
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
@@ -199,75 +305,4 @@ ul {
 .contact-footer:hover,
 .contact-footer:focus {
     color: var(--brand-color);
-}
-
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-.container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid #ececec;
-}
-.options {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-
-    margin-bottom: 50px;
-}
-.nav {
-    display: flex;
-    flex-wrap: wrap;
-
-    gap: 46px;
-    padding: 32px 46px;
-}
-.contact-data {
-    padding: 32px 0;
-}
-.offer-items {
-    display: flex;
-    gap: 30px;
-    line-height: 1.71;
-    padding: 94px 0;
-}
-.our-services {
-    display: flex;
-    gap: 30px;
-    padding: 50px 0 94px;
-}
-.crew-members {
-    display: flex;
-    gap: 30px;
-    margin-top: 50px;
-}
-.menu > .logo {
-    margin: 24px 90px 25px 215px;
-    padding: 0;
-}
-.decoration {
-    border: 1px solid #eeeeee;
-    padding: 20px 24px;
-}
-.footer-container > .logo {
-    margin: 60px 0 161px 215px;
-}
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.description {
-    padding: 30px;
-    text-align: center;
-    background-color: #fff;
 }
