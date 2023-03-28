@@ -84,14 +84,12 @@ img {
     align-items: center;
 
     gap: 46px;
-    padding: 32px 46px;
 }
 .navigation {
     display: flex;
     flex-wrap: wrap;
 
     gap: 46px;
-    padding: 0 46px;
 }
 .contact-data {
     display: flex;
