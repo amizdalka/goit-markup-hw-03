@@ -81,6 +81,7 @@ img {
 .nav {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 
     gap: 46px;
     padding: 32px 46px;
@@ -94,6 +95,7 @@ img {
 }
 .contact-data {
     display: flex;
+    align-items: center;
 
     padding: 32px 0;
     gap: 50px;
@@ -132,9 +134,10 @@ img {
 }
 .order {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    background-color: var(--off-color);
+    background-color: var(--brand-color);
     border: none;
     border-radius: 4px;
+    color: #fff;
     width: 200px;
     height: 50px;
     font-family: 'Roboto', sans-serif;
@@ -147,9 +150,6 @@ img {
 }
 .order:hover,
 .order:focus {
-    background-color: var(--brand-color);
-    border-color: var(--brand-color);
-    color: #fff;
     cursor: pointer;
 }
 .offer-items {
